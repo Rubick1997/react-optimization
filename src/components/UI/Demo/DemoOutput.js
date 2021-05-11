@@ -1,11 +1,11 @@
 import React from 'react'
 
 function DemoOutput(props) {
+    console.log("DemoOutput Running")
     return (
-        <div>
-            
-        </div>
-    )
+				<p>{props.show && "This is new!"}</p>
+
+		);
 }
 
-export default DemoOutput
+export default React.memo(DemoOutput)
